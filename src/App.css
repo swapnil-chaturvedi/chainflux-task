@@ -1,38 +1,156 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-text {
+  color: #6e5b4f;
+  font-weight: bold;
+  background-color: #fff;
+}
+.heading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  left: 0;
+  font-size: 17px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.batches {
+  margin-top: 55px;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.delete-batch-span {
+  cursor: pointer;
+  font-size: 26px;
+  color: #c09172;
+  margin-right: 5px;
+}
+.delete-bar-span {
+  cursor: pointer;
+  font-size: 26px;
+  color: #c09172;
+  margin-right: 5px;
+}
+
+.add-batch-button {
+  background-color: #eb902d;
+  font-size: 15px;
+  padding: 0px 4px;
+  border-radius: 5px;
+}
+.add-bar-button {
+  background-color: #eb902d;
+  font-size: 12px;
+  padding: 0px 3px;
+  border-radius: 5px;
+}
+.add-bar {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.add-batch {
+  margin-left: 10px;
+}
+
+.batch-number-input {
+  font-size: 14px;
+  width: 98%;
+  color: #554133;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  background: #fff8f4;
+}
+.batch-number-input-grp {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px 0;
+}
+.bar-input {
+  width: 32%;
+  color: #554133;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  background: #fff8f4;
 }
 
-.App-link {
-  color: #61dafb;
+.bar-row-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.bar-rows {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+.bar-group {
+  border: 1px solid #f1e7df;
+  padding-left: 25px;
+  border-radius: 10px;
+}
+.bar-group-heading {
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.add-batch-btn-grp {
+  display: flex;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.add-bar-btn-grp {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.delete-bar-span:nth-child(1) {
+  display: none;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #add0f6;
+}
+
+::placeholder {
+  color: #cab4a7;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #cab4a7;
+}
+
+::-ms-input-placeholder {
+  color: #cab4a7;
+}
+
+@media only screen and (max-width: 400px) {
+  .App {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .bar-input {
+    width: 92%;
+    color: #554133;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    background: #fff8f4;
+    margin-bottom: 5px;
+  }
+  .bar-rows {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    flex-direction: column;
   }
 }
